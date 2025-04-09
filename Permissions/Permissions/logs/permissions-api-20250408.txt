@@ -1,0 +1,92 @@
+2025-04-08 02:59:29.018 -03:00 [FTL] Application terminated unexpectedly
+System.ArgumentNullException: Value cannot be null. (Parameter 'uriString')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.Uri..ctor(String uriString)
+   at Program.<Main>$(String[] args) in C:\Users\USUARIO\source\repos\Permissions\Permissions\Program.cs:line 45
+2025-04-08 02:59:48.324 -03:00 [FTL] Application terminated unexpectedly
+System.ArgumentNullException: Value cannot be null. (Parameter 'uriString')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.Uri..ctor(String uriString)
+   at Program.<Main>$(String[] args) in C:\Users\USUARIO\source\repos\Permissions\Permissions\Program.cs:line 45
+2025-04-08 02:59:54.306 -03:00 [FTL] Application terminated unexpectedly
+System.ArgumentNullException: Value cannot be null. (Parameter 'uriString')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.Uri..ctor(String uriString)
+   at Program.<Main>$(String[] args) in C:\Users\USUARIO\source\repos\Permissions\Permissions\Program.cs:line 45
+2025-04-08 03:00:01.559 -03:00 [FTL] Application terminated unexpectedly
+System.ArgumentNullException: Value cannot be null. (Parameter 'uriString')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.Uri..ctor(String uriString)
+   at Program.<Main>$(String[] args) in C:\Users\USUARIO\source\repos\Permissions\Permissions\Program.cs:line 45
+2025-04-08 03:00:07.702 -03:00 [FTL] Application terminated unexpectedly
+System.ArgumentNullException: Value cannot be null. (Parameter 'uriString')
+   at System.ArgumentNullException.Throw(String paramName)
+   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
+   at System.Uri..ctor(String uriString)
+   at Program.<Main>$(String[] args) in C:\Users\USUARIO\source\repos\Permissions\Permissions\Program.cs:line 45
+2025-04-08 16:50:50.755 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-04-08 16:50:52.709 -03:00 [INF] No migrations were found in assembly 'Permissions'. A migration needs to be added before the database can be updated.
+2025-04-08 16:51:53.004 -03:00 [FTL] Application terminated unexpectedly
+Microsoft.Data.SqlClient.SqlException (0x80131904): Login failed for user ''.
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.CompleteLogin(Boolean enlistOK)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
+   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
+   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at Microsoft.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at Microsoft.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry, SqlConnectionOverrides overrides)
+   at Microsoft.Data.SqlClient.SqlConnection.Open(SqlConnectionOverrides overrides)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternal(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.Open(Boolean errorsExpected)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.<>c__DisplayClass18_0.<Exists>b__0(DateTime giveUp)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.<>c__DisplayClass12_0`2.<Execute>b__0(DbContext _, TState s)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass28_0`2.<Execute>b__0(DbContext context, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementation[TState,TResult](Func`3 operation, Func`3 verifySucceeded, TState state)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ExecutionStrategyExtensions.Execute[TState,TResult](IExecutionStrategy strategy, TState state, Func`2 operation, Func`2 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.Exists(Boolean retryOnNotExists)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerDatabaseCreator.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+   at Program.<Main>$(String[] args) in C:\Users\USUARIO\source\repos\Permissions\Permissions\Program.cs:line 85
+ClientConnectionId:995ff891-1acc-4cd2-9689-da674cb6e520
+Error Number:18456,State:1,Class:14
+2025-04-08 16:55:31.797 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-04-08 16:55:35.766 -03:00 [INF] No migrations were found in assembly 'Permissions'. A migration needs to be added before the database can be updated.
+2025-04-08 16:56:15.848 -03:00 [INF] No action descriptors found. This may indicate an incorrectly configured application or missing application parts. To learn more, visit https://aka.ms/aspnet/mvc/app-parts
+2025-04-08 16:56:16.802 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-04-08 16:56:16.803 -03:00 [INF] Hosting environment: Development
+2025-04-08 16:56:16.804 -03:00 [INF] Content root path: C:\Users\USUARIO\source\repos\Permissions\Permissions
+2025-04-08 16:56:16.889 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44326/swagger - null null
+2025-04-08 16:56:17.130 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44326/swagger/index.html - null null
+2025-04-08 16:56:17.140 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44326/swagger - 301 null null 258.2133ms
+2025-04-08 16:56:17.257 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44326/swagger/index.html - 200 null text/html;charset=utf-8 126.6947ms
+2025-04-08 16:56:17.294 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44326/swagger/swagger-ui.css - null null
+2025-04-08 16:56:17.294 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44326/swagger/swagger-ui-bundle.js - null null
+2025-04-08 16:56:17.295 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44326/swagger/swagger-ui-standalone-preset.js - null null
+2025-04-08 16:56:17.326 -03:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-04-08 16:56:17.326 -03:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-04-08 16:56:17.328 -03:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-04-08 16:56:17.333 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44326/swagger/swagger-ui.css - 200 143943 text/css 42.6697ms
+2025-04-08 16:56:17.338 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44326/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 42.6613ms
+2025-04-08 16:56:17.357 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44326/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 65.7895ms
+2025-04-08 16:56:17.386 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44326/_framework/aspnetcore-browser-refresh.js - null null
+2025-04-08 16:56:17.390 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44326/_framework/aspnetcore-browser-refresh.js - 200 13758 application/javascript; charset=utf-8 2.8079ms
+2025-04-08 16:56:17.394 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44326/_vs/browserLink - null null
+2025-04-08 16:56:17.460 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44326/_vs/browserLink - 200 null text/javascript; charset=UTF-8 65.3888ms
+2025-04-08 16:56:17.739 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44326/swagger/v1/swagger.json - null null
+2025-04-08 16:56:17.763 -03:00 [INF] Request starting HTTP/2 GET https://localhost:44326/swagger/favicon-32x32.png - null null
+2025-04-08 16:56:17.764 -03:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-04-08 16:56:17.765 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44326/swagger/favicon-32x32.png - 200 628 image/png 2.2758ms
+2025-04-08 16:56:17.770 -03:00 [INF] Request finished HTTP/2 GET https://localhost:44326/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 31.2033ms
